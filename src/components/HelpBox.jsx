@@ -12,6 +12,7 @@ function HelpBox({ title, text }) {
 }
 
 // Prop types for the HelpBox component
+// adding one more comments
 
 HelpBox.propTypes = {
   title: string,
