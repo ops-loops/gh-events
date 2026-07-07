@@ -14,7 +14,6 @@ on:
       - "feature-*"
     paths:
       - ".github/workflows/*"
-      - "src/**"
 jobs:
   deploy:
     runs-on: ubuntu-latest
