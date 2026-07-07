@@ -4,7 +4,17 @@ on:
     types:
       - opened
       - reopened
+    branches:
+      - main
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - "dev-*"
+      - "feature-*"
+    paths:
+      - ".github/workflows/*"
+      - "src/**"
 jobs:
   deploy:
     runs-on: ubuntu-latest
